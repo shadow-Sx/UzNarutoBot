@@ -12,7 +12,7 @@ load_dotenv()
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 # Kanal username
-CHANNEL_URL = "https://t.me/AniGonUz"
+CHANNEL_URL = "https://t.me/+LTnRUFYhvB0zODcy"
 
 # Flask server yaratish
 server = Flask(__name__)
@@ -37,7 +37,8 @@ def send_welcome(message):
     # Xabar yuborish
     bot.reply_to(
         message,
-        "Bizning asosiy kanalimizga qo'shiling",
+        "<blockquote><b>Naruto Animesini ko'rishni hohlasangiz unda pastdagi tugmasni bosing va kanalga qoshiling</b></blockquote>"
+        ,
         reply_markup=markup
     )
 
